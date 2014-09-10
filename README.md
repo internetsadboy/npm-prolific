@@ -1,11 +1,14 @@
 ### npm-prolific
 
-Crawls npm for prolific author data (rank, author, resource)
+Crawls npm for prolific author data (rank, username, resource)
 
 ### Usage
 
 ```javascript
 'use strict';
+
+var npmProlific = require('npm-prolific');
+
 
 npmProlific(function onNpmProlific (err, data) {
   if (err) throw err;
@@ -14,7 +17,7 @@ npmProlific(function onNpmProlific (err, data) {
 
 ```
 
-Output
+**Output**
 
 ```
 [ { rank: '191',
@@ -52,4 +55,4 @@ Output
 ```$ npm install npm-prolific```
 
 ### test
-```$ npm test``` 
+```$ npm test```
